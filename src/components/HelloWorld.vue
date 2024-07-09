@@ -77,6 +77,8 @@ td {
 }
 .weather-component {
   text-align: center;
+  position: relative; /* Ensure this is relative or another non-static position */
+  z-index: 1; /* Lower than .face */
 }
 table {
   margin-left: auto;

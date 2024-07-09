@@ -28,8 +28,8 @@ const toggleRightEye = () => {
       ></div>
       <div class="mouth"></div>
 
-      <HelloWorld />
     </div>
+    <HelloWorld />
   </div>
 </template>
 
@@ -51,10 +51,11 @@ const toggleRightEye = () => {
   height: 200px;
   border-radius: 50%;
   background-color: #5d5d5d;
-  position: relative;
+  position: relative; /* Ensure z-index works */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 2; /* Make sure this is higher */
 }
 
 .eye {
@@ -83,3 +84,4 @@ const toggleRightEye = () => {
   border-radius: 0 0 50px 50px;
 }
 </style>
+
