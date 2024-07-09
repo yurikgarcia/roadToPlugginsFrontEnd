@@ -18,6 +18,10 @@ export default defineConfig(({ command, mode }) => {
           logLevel: 'debug', // Log proxy requests
         }
       }
+    },
+    build: {
+      outDir: '../backend/App.Backend/wwwroot',
+      emptyOutDir: true
     }
   }
 });
